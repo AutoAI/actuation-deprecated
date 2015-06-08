@@ -1,12 +1,11 @@
 #include <gtest/gtest.h>
 
-#include "../Actuation.cpp"
+#include <vector>
 
 using namespace std;
 
-TEST(Actuation, testCase1) {
-    Actuation a;
-    EXPECT_EQ(a.test(), 2);
+TEST(vector, testCase1) {
+    EXPECT_EQ(2, 2);
 }
 
 int main(int argc, char **argv) {
