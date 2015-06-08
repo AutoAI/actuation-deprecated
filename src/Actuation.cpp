@@ -5,3 +5,5 @@
 int Actuation::test() {
     return 2;
 }
+
+int main(){ }

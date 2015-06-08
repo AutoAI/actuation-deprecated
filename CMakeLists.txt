@@ -21,9 +21,9 @@ include_directories(
 )
 
 
-add_executable(Run src/Actuation.cpp)
-target_link_libraries(Run ${GTEST_LIBRARIES} ${catkin_LIBRARIES} pthread)
-add_dependencies(Run Actuation_actuation_cpp)
+add_executable(Actuation_Run src/Actuation.cpp)
+target_link_libraries(Actuation_Run ${GTEST_LIBRARIES} ${catkin_LIBRARIES} pthread)
+add_dependencies(Actuation_Run Actuation_actuation_cpp)
 
-catkin_add_gtest(utest src/test/utest.cpp)
-target_link_libraries(utest ${catkin_LIBRARIES}) 
+catkin_add_gtest(Actuation_utest src/test/utest.cpp)
+target_link_libraries(Actuation_utest ${catkin_LIBRARIES}) 
