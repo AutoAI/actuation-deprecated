@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(Actuation)
+project(actuation)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -21,9 +21,9 @@ include_directories(
 )
 
 
-add_executable(Actuation_Run src/Actuation.cpp)
-target_link_libraries(Actuation_Run ${GTEST_LIBRARIES} ${catkin_LIBRARIES} pthread)
-add_dependencies(Actuation_Run Actuation_actuation_cpp)
+add_executable(actuation_Run src/actuation.cc)
+target_link_libraries(actuation_Run ${GTEST_LIBRARIES} ${catkin_LIBRARIES} pthread)
+add_dependencies(actuation_Run actuation_actuation_cc)
 
-catkin_add_gtest(Actuation_utest src/test/utest.cpp)
-target_link_libraries(Actuation_utest ${catkin_LIBRARIES}) 
+catkin_add_gtest(actuation_utest src/test/utest.cc)
+target_link_libraries(actuation_utest ${catkin_LIBRARIES}) 
