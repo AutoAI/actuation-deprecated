@@ -30,6 +30,8 @@
 
 #pragma once
 
+#include "ros.h"
+
 #include "actuation.h"
 
 int Actuation::test() {
